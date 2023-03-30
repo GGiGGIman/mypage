@@ -89,7 +89,6 @@
     <script>
         $(document).ready(function () {
             fetch("http://spartacodingclub.shop/sparta_api/weather/dajun").then(res => res.json()).then(data => {
-                $('#temp').empty()
                 let temper = data['temp']
                 $('#temp').text(temper)
 
